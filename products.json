@@ -1,0 +1,41 @@
+{
+  "foods": {
+    "Iskender": {
+      "price": 100
+    },
+    "Manti": {
+      "price": 50
+    },
+    "Tost": {
+      "price": 40
+    },
+    "Corba": {
+      "price": 30
+    },
+    "Doner": {
+      "price": 80
+    }
+  },
+  "drinks": {
+    "Kola": {
+      "price": 20
+    },
+    "Su": {
+      "price": 5
+    },
+    "Ayran": {
+      "price": 10
+    },
+    "Meyve Suyu": {
+      "price": 12.5
+    }
+  },
+  "desserts": {
+    "Sutlac": {
+      "price": 20
+    },
+    "Kazan Dibi": {
+      "price": 20
+    }
+  }
+}
