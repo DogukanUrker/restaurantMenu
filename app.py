@@ -12,7 +12,7 @@ def fetchMenu():
 
 @app.route("/")
 def index():
-    return render_template("index.html",menu = fetchMenu())
+    return render_template("index.html", menu = fetchMenu())
 
 
 if __name__ == "__main__":
