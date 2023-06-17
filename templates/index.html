@@ -1,1 +1,8 @@
-{% for i in menu %} {{ i }} {% endfor %}
+{% for i in menu %}
+<h1>-----------------------------------</h1>
+{% for j in i %}
+<div class="product">
+  <div class="title">{{j}}</div>
+  <div class="price">{{i[j].get('price')}}</div>
+</div>
+{% endfor %} {% endfor %}
