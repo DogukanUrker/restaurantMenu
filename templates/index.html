@@ -8,7 +8,7 @@
     {% for foods in foods.values() %} {% for food in foods %}
     <div class="product">
       <div class="productName">{{food.get('name')}}</div>
-      <div class="productPrice">{{food.get('price')}}TL</div>
+      <div class="productPrice">{{food.get('price')}} TL</div>
     </div>
     {% endfor %} {% endfor %}
   </div>
@@ -17,7 +17,7 @@
     {% for drinks in drinks.values() %} {% for drink in drinks %}
     <div class="product">
       <div class="productName">{{drink.get('name')}}</div>
-      <div class="productPrice">{{drink.get('price')}}TL</div>
+      <div class="productPrice">{{drink.get('price')}} TL</div>
     </div>
     {% endfor %} {% endfor %}
   </div>
@@ -26,7 +26,7 @@
     {% for desserts in desserts.values() %} {% for dessert in desserts %}
     <div class="product">
       <div class="productName">{{dessert.get('name')}}</div>
-      <div class="productPrice">{{dessert.get('price')}}TL</div>
+      <div class="productPrice">{{dessert.get('price')}} TL</div>
     </div>
     {% endfor %} {% endfor %}
   </div>
