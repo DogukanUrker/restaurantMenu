@@ -1,0 +1,25 @@
+.menu {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.section {
+    margin: 1rem 0 1rem 0;
+}
+
+.product {
+    font-size: 1.5rem;
+    background-color: rgba(255, 228, 196, 0.815);
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    width: 15rem;
+    justify-content: space-between
+}
