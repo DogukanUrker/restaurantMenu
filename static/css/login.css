@@ -1,0 +1,35 @@
+.loginBox {
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1rem;
+}
+
+input {
+    display: block;
+    text-align: center;
+    border-radius: 0.25rem;
+    height: 2.25rem;
+    border: 1px solid #333745;
+}
+
+.loginBox .inputField {
+    margin: 1rem;
+}
+
+.loginBtn {
+    background-color: #F2F0EB;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    cursor: pointer;
+    transition-duration: 0.25s;
+    width: 4rem;
+}
+
+.loginBtn:hover {
+    color: #F2F0EB;
+    background-color: #333745;
+}
