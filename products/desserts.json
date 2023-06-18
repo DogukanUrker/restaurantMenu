@@ -1,0 +1,12 @@
+{
+  "desserts": [
+    {
+      "name": "Kazan Dibi",
+      "price": 20
+    },
+    {
+      "name": "Sutlac",
+      "price": 15
+    }
+  ]
+}
