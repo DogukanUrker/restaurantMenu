@@ -6,17 +6,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    data = load(open("products.json"))
     return render_template(
         "index.html",
-        cato=data,
-        foods=data["foods"],
-        drinks=data["drinks"],
-        desserts=data["desserts"],
-        foodsPrice=data["desserts"].values(),
-        drinksPrice=data["drinks"].values(),
-        dessertsPrice=data["desserts"].values(),
+        foods=load(open("products/foods.json")),
+        drinks=load(open("products/drinks.json")),
+        desserts=load(open("products/desserts.json")),
     )
+
 
 if __name__ == "__main__":
     app.run(debug=True)
