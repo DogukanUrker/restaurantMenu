@@ -1,31 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
-  </head>
-  <body>
-    <div class="foods">
-      <h1>Ana Yemekler</h1>
-      {% for foods in foods.values() %} {% for food in foods %}
-      <h3>{{food.get('name')}}</h3>
-      <h4>{{food.get('price')}}</h4>
-      {% endfor %} {% endfor %}
-    </div>
-    <div class="drinks">
-      <h1>Icecekler</h1>
-      {% for drinks in drinks.values() %} {% for drink in drinks %}
-      <h3>{{drink.get('name')}}</h3>
-      <h4>{{drink.get('price')}}</h4>
-      {% endfor %} {% endfor %}
-    </div>
-    <div class="desserts">
-      <h1>Tatlilar</h1>
-      {% for desserts in desserts.values() %} {% for dessert in desserts %}
-      <h3>{{dessert.get('name')}}</h3>
-      <h4>{{dessert.get('price')}}</h4>
-      {% endfor %} {% endfor %}
-    </div>
-  </body>
-</html>
+{% extends 'layout.html' %} {% block head %}
+<title>Menu</title>
+<link rel="stylesheet" href="/static/css/index.css" />
+{% endblock %} {% block body %}
+<div class="foods">
+  <h1>Ana Yemekler</h1>
+  {% for foods in foods.values() %} {% for food in foods %}
+  <h3>{{food.get('name')}}</h3>
+  <h4>{{food.get('price')}}</h4>
+  {% endfor %} {% endfor %}
+</div>
+<div class="drinks">
+  <h1>Icecekler</h1>
+  {% for drinks in drinks.values() %} {% for drink in drinks %}
+  <h3>{{drink.get('name')}}</h3>
+  <h4>{{drink.get('price')}}</h4>
+  {% endfor %} {% endfor %}
+</div>
+<div class="desserts">
+  <h1>Tatlilar</h1>
+  {% for desserts in desserts.values() %} {% for dessert in desserts %}
+  <h3>{{dessert.get('name')}}</h3>
+  <h4>{{dessert.get('price')}}</h4>
+  {% endfor %} {% endfor %}
+</div>
+{% endblock %}
