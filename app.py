@@ -1,18 +1,14 @@
 from flask import Flask, render_template, request, redirect, session
-from json import load
 import secrets
 
 app = Flask(__name__)
 app.secret_key = secrets.token_urlsafe(32)
 
-
+        
 @app.route("/")
 def index():
     return render_template(
-        "index.html",
-        foods=load(open("products/foods.json")),
-        drinks=load(open("products/drinks.json")),
-        desserts=load(open("products/desserts.json")),
+        "index.html"
     )
 
 
@@ -29,7 +25,7 @@ def login():
 
 @app.route("/admin")
 def admin():
-    if session["admin"] == True:
+    if "admin" in session:
         return render_template("admin.html")
     return redirect("/login")
 
