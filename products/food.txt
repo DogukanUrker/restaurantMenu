@@ -1,0 +1,5 @@
+Iskender // 100
+Manti // 60
+Tost // 40
+Corba // 30
+Doner // 80
