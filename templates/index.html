@@ -5,30 +5,30 @@
 <div class="menu">
   <div class="section">
     <h1>Ana Yemekler</h1>
-    {% for foods in foods.values() %} {% for food in foods %}
+    {% for food in foods %}
     <div class="product">
-      <div class="productName">{{food.get('name')}}</div>
-      <div class="productPrice">{{food.get('price')}} TL</div>
+      <div class="productName">{{food[0]}}</div>
+      <div class="productPrice">{{food[1]}} TL</div>
     </div>
-    {% endfor %} {% endfor %}
+    {% endfor %}
   </div>
   <div class="section">
     <h1>Icecekler</h1>
-    {% for drinks in drinks.values() %} {% for drink in drinks %}
+    {% for drink in drinks %}
     <div class="product">
-      <div class="productName">{{drink.get('name')}}</div>
-      <div class="productPrice">{{drink.get('price')}} TL</div>
+      <div class="productName">{{drink[0]}}</div>
+      <div class="productPrice">{{drink[1]}} TL</div>
     </div>
-    {% endfor %} {% endfor %}
+    {% endfor %}
   </div>
   <div class="section">
     <h1>Tatlilar</h1>
-    {% for desserts in desserts.values() %} {% for dessert in desserts %}
+    {% for dessert in desserts %}
     <div class="product">
-      <div class="productName">{{dessert.get('name')}}</div>
-      <div class="productPrice">{{dessert.get('price')}} TL</div>
+      <div class="productName">{{dessert[0]}}</div>
+      <div class="productPrice">{{dessert[1]}} TL</div>
     </div>
-    {% endfor %} {% endfor %}
+    {% endfor %}
   </div>
 </div>
 {% endblock %}

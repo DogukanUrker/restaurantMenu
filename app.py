@@ -4,11 +4,24 @@ import secrets
 app = Flask(__name__)
 app.secret_key = secrets.token_urlsafe(32)
 
-        
+
+def loadData():
+    foods = []
+    drinks = []
+    desserts = []
+    for i in open("products/food.txt", "r"):
+        foods.append(i.strip("\n").split("//"))
+    for i in open("products/drink.txt", "r"):
+        drinks.append(i.strip("\n").split("//"))
+    for i in open("products/dessert.txt", "r"):
+        desserts.append(i.strip("\n").split("//"))
+    return foods, drinks, desserts
+
+
 @app.route("/")
 def index():
     return render_template(
-        "index.html"
+        "index.html", foods=loadData()[0], drinks=loadData()[1], desserts=loadData()[2]
     )
 
 
