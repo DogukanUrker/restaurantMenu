@@ -1,4 +1,4 @@
-Kola // 20
-Ayran // 10
-Su // 5
-Meyve Suyu // 8
+Kola//20
+Ayran//10
+Su//5
+MeyveSuyu//8

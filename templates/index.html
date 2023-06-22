@@ -1,34 +1,49 @@
-{% extends 'layout.html' %} {% block head %}
-<title>Menu</title>
-<link rel="stylesheet" href="/static/css/index.css" />
-{% endblock %} {% block body %}
-<div class="menu">
-  <div class="section">
-    <h1>Ana Yemekler</h1>
-    {% for food in foods %}
-    <div class="product">
-      <div class="productName">{{food[0]}}</div>
-      <div class="productPrice">{{food[1]}} TL</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📃</text></svg>"
+    />
+    <title>Menu</title>
+    <link rel="stylesheet" href="/static/css/index.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <div class="section">
+        <h1>Ana Yemekler</h1>
+        {% for food in foods %}
+        <div class="product">
+          <img src={{ url_for('static', filename = food[2]) }} alt="" />
+          <div class="productName">{{food[0]}}</div>
+          <div class="productPrice">{{food[1]}} TL</div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="section">
+        <h1>Icecekler</h1>
+        {% for drink in drinks %}
+        <div class="product">
+          <img src={{ url_for('static', filename = drink[2]) }} alt="" />
+          <div class="productName">{{drink[0]}}</div>
+          <div class="productPrice">{{drink[1]}} TL</div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="section">
+        <h1>Tatlilar</h1>
+        {% for dessert in desserts %}
+        <div class="product">
+          <img src={{ url_for('static', filename = dessert[2]) }} alt="" />
+          <div class="productName">{{dessert[0]}}</div>
+          <div class="productPrice">{{dessert[1]}} TL</div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
-    {% endfor %}
-  </div>
-  <div class="section">
-    <h1>Icecekler</h1>
-    {% for drink in drinks %}
-    <div class="product">
-      <div class="productName">{{drink[0]}}</div>
-      <div class="productPrice">{{drink[1]}} TL</div>
-    </div>
-    {% endfor %}
-  </div>
-  <div class="section">
-    <h1>Tatlilar</h1>
-    {% for dessert in desserts %}
-    <div class="product">
-      <div class="productName">{{dessert[0]}}</div>
-      <div class="productPrice">{{dessert[1]}} TL</div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-{% endblock %}
+  </body>
+</html>
