@@ -1,4 +1,4 @@
-Kola//20
-Ayran//10
-Su//5
-MeyveSuyu//8
+Kola//20//OIP.jpg
+Ayran//10//OIP.jpg
+Su//5//OIP.jpg
+MeyveSuyu//8//OIP.jpg
