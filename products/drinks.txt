@@ -1,4 +1,4 @@
 Kola//20//kola.jpg
 Ayran//10//ayran.jpg
 Su//5//su.jpg
-MeyveSuyu//8//meyvesuyu.jpg
+Meyve Suyu//8//meyvesuyu.jpg
