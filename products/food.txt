@@ -1,5 +1,5 @@
-Iskender//100//OIP.jpg
-Manti//60//OIP.jpg
-Tost//40//OIP.jpg
-Corba//30//OIP.jpg
-Doner//80//OIP.jpg
+Iskender//100//iskender.jpg
+Manti//60//manti.jpg
+Tost//40//tost.jpg
+Corba//30//corba.jpg
+Doner//80//doner.jpg
