@@ -4,7 +4,7 @@
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-img {
+.productImage {
     display: block;
     width: 100%;
     height: 10rem;
@@ -40,4 +40,14 @@ img {
     margin-top: 0.5rem;
     display: flex;
     justify-content: space-between;
+}
+
+.brand {
+    width: fit-content;
+    margin: auto;
+}
+
+.brandLogo {
+    width: 15rem;
+    margin-top: 1.5rem;
 }
